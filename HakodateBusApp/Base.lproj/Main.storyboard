@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="avT-N6-eXG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="avT-N6-eXG">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,26 +17,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXU-IE-26n">
-                                <rect key="frame" x="177" y="452" width="75" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qDl-Bc-zKQ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qb-Ip-obX">
+                                <rect key="frame" x="327" y="370" width="67" height="31"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qDl-Bc-zKQ">
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="U8F-WE-a2B">
+                                <rect key="frame" x="25" y="476" width="378" height="281"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmf-hu-yon">
+                                        <rect key="frame" x="100" y="0.0" width="178" height="32"/>
+                                        <color key="tintColor" systemColor="systemGrayColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="マイルート">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                            <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1XJ-Sc-jlh">
+                                        <rect key="frame" x="0.0" y="70" width="378" height="141"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tma-qI-y6X">
+                                        <rect key="frame" x="100" y="249" width="178" height="32"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" red="0.22976401417525771" green="0.22976401417525771" blue="0.22976401417525771" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="検索">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nmf-hu-yon" secondAttribute="trailing" constant="100" id="0xK-PQ-Mmq"/>
+                                    <constraint firstItem="1XJ-Sc-jlh" firstAttribute="leading" secondItem="U8F-WE-a2B" secondAttribute="leading" id="CsG-rJ-wDZ"/>
+                                    <constraint firstItem="1XJ-Sc-jlh" firstAttribute="top" secondItem="nmf-hu-yon" secondAttribute="bottom" constant="38" id="Eeq-vq-b6I"/>
+                                    <constraint firstItem="Tma-qI-y6X" firstAttribute="leading" secondItem="U8F-WE-a2B" secondAttribute="leading" constant="100" id="H7m-CC-pyB"/>
+                                    <constraint firstAttribute="trailing" secondItem="nmf-hu-yon" secondAttribute="trailing" constant="100" id="Nhy-6e-pSj"/>
+                                    <constraint firstItem="nmf-hu-yon" firstAttribute="leading" secondItem="U8F-WE-a2B" secondAttribute="leading" constant="100" id="Ojd-pZ-NtQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tma-qI-y6X" secondAttribute="trailing" constant="100" id="R6G-d6-AUc"/>
+                                    <constraint firstItem="Tma-qI-y6X" firstAttribute="top" secondItem="1XJ-Sc-jlh" secondAttribute="bottom" constant="38" id="UnD-x0-ShM"/>
+                                    <constraint firstItem="nmf-hu-yon" firstAttribute="top" secondItem="U8F-WE-a2B" secondAttribute="top" id="VSY-B0-Uee"/>
+                                    <constraint firstItem="Tma-qI-y6X" firstAttribute="top" secondItem="1XJ-Sc-jlh" secondAttribute="bottom" constant="38" id="fYF-Na-VwR"/>
+                                    <constraint firstItem="1XJ-Sc-jlh" firstAttribute="top" secondItem="nmf-hu-yon" secondAttribute="bottom" constant="38" id="hWF-Kb-Kqa"/>
+                                    <constraint firstAttribute="trailing" secondItem="1XJ-Sc-jlh" secondAttribute="trailing" id="ikr-aJ-BNP"/>
+                                    <constraint firstItem="nmf-hu-yon" firstAttribute="leading" secondItem="U8F-WE-a2B" secondAttribute="leading" constant="100" id="itt-Ci-7td"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rU5-OI-NOp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qDl-Bc-zKQ" firstAttribute="leading" secondItem="rU5-OI-NOp" secondAttribute="leading" id="4RH-74-ahb"/>
+                            <constraint firstItem="3Qb-Ip-obX" firstAttribute="leading" secondItem="rU5-OI-NOp" secondAttribute="leading" constant="327" id="B8H-09-Bcq"/>
+                            <constraint firstItem="rU5-OI-NOp" firstAttribute="bottom" secondItem="U8F-WE-a2B" secondAttribute="bottom" constant="86" id="M4w-OD-N7C"/>
+                            <constraint firstItem="qDl-Bc-zKQ" firstAttribute="trailing" secondItem="rU5-OI-NOp" secondAttribute="trailing" id="O7u-4M-yVs"/>
+                            <constraint firstItem="qDl-Bc-zKQ" firstAttribute="top" secondItem="M2L-hm-gBj" secondAttribute="top" id="Qlg-kH-gG1"/>
+                            <constraint firstItem="3Qb-Ip-obX" firstAttribute="top" secondItem="rU5-OI-NOp" secondAttribute="top" constant="326" id="Z1y-j8-0uA"/>
+                            <constraint firstItem="rU5-OI-NOp" firstAttribute="trailing" secondItem="U8F-WE-a2B" secondAttribute="trailing" constant="25" id="hKb-Ks-xrj"/>
+                            <constraint firstItem="rU5-OI-NOp" firstAttribute="trailing" secondItem="3Qb-Ip-obX" secondAttribute="trailing" constant="34" id="i4T-5A-oFj"/>
+                            <constraint firstItem="U8F-WE-a2B" firstAttribute="leading" secondItem="rU5-OI-NOp" secondAttribute="leading" constant="25" id="sWe-eL-Ii0"/>
+                            <constraint firstAttribute="bottom" secondItem="qDl-Bc-zKQ" secondAttribute="bottom" id="wXM-8l-ymn"/>
+                            <constraint firstItem="U8F-WE-a2B" firstAttribute="top" secondItem="3Qb-Ip-obX" secondAttribute="bottom" constant="75" id="zTF-VG-tB4"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="経路検索" image="bus.fill" catalog="system" id="dEn-UE-h9e"/>
+                    <connections>
+                        <outlet property="SearchView" destination="U8F-WE-a2B" id="qaD-ca-0TA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GbT-mU-stW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2305" y="-93"/>
+            <point key="canvasLocation" x="2304.6728971962616" y="-93.30453563714903"/>
         </scene>
         <!--Second-->
         <scene sceneID="6dN-p0-pFB">
@@ -139,8 +195,14 @@
         <image name="bus.fill" catalog="system" width="128" height="122"/>
         <image name="clock.fill" catalog="system" width="128" height="121"/>
         <image name="gear.circle.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
