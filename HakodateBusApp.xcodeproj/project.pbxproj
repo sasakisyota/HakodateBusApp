@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67D344C03143290C3195B9A3 /* Pods_HakodateBusApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C84B1ABC1AD90E810ADC6B9 /* Pods_HakodateBusApp.framework */; };
 		96DEE0B4271CEFC8003C3985 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEE0B3271CEFC8003C3985 /* AppDelegate.swift */; };
 		96DEE0B6271CEFC8003C3985 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEE0B5271CEFC8003C3985 /* SceneDelegate.swift */; };
 		96DEE0B8271CEFC8003C3985 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEE0B7271CEFC8003C3985 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C84B1ABC1AD90E810ADC6B9 /* Pods_HakodateBusApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HakodateBusApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33AFFF9343330E281FE65617 /* Pods-HakodateBusApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HakodateBusApp.release.xcconfig"; path = "Target Support Files/Pods-HakodateBusApp/Pods-HakodateBusApp.release.xcconfig"; sourceTree = "<group>"; };
 		96DEE0B0271CEFC8003C3985 /* HakodateBusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HakodateBusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96DEE0B3271CEFC8003C3985 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96DEE0B5271CEFC8003C3985 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		96DEE0BC271CEFCC003C3985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96DEE0BF271CEFCC003C3985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96DEE0C1271CEFCD003C3985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAE54F54C765B4181ED66636 /* Pods-HakodateBusApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HakodateBusApp.debug.xcconfig"; path = "Target Support Files/Pods-HakodateBusApp/Pods-HakodateBusApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D344C03143290C3195B9A3 /* Pods_HakodateBusApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A9D3EA5330F2F3991B02E31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAE54F54C765B4181ED66636 /* Pods-HakodateBusApp.debug.xcconfig */,
+				33AFFF9343330E281FE65617 /* Pods-HakodateBusApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6A2518D2FCE3AE96123637F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C84B1ABC1AD90E810ADC6B9 /* Pods_HakodateBusApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		96DEE0A7271CEFC8003C3985 = {
 			isa = PBXGroup;
 			children = (
 				96DEE0B2271CEFC8003C3985 /* HakodateBusApp */,
 				96DEE0B1271CEFC8003C3985 /* Products */,
+				1A9D3EA5330F2F3991B02E31 /* Pods */,
+				6A2518D2FCE3AE96123637F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96DEE0C4271CEFCD003C3985 /* Build configuration list for PBXNativeTarget "HakodateBusApp" */;
 			buildPhases = (
+				B17D610AE6DEBCBCE1833FC9 /* [CP] Check Pods Manifest.lock */,
 				96DEE0AC271CEFC8003C3985 /* Sources */,
 				96DEE0AD271CEFC8003C3985 /* Frameworks */,
 				96DEE0AE271CEFC8003C3985 /* Resources */,
+				967FA1CB28BCCFDC008D057B /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		967FA1CB28BCCFDC008D057B /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which mint >/dev/null; then\n mint run swiftlint swiftlint autocorrect --format\n mint run swiftlint swiftlint\nelse\n echo \"warning: Mint not installed, download from https://github.com/yonaskolb/Mint\"\nfi\n\n";
+		};
+		B17D610AE6DEBCBCE1833FC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HakodateBusApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		96DEE0AC271CEFC8003C3985 /* Sources */ = {
@@ -284,12 +353,14 @@
 		};
 		96DEE0C5271CEFCD003C3985 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAE54F54C765B4181ED66636 /* Pods-HakodateBusApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 56A6V2NMA2;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HakodateBusApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -312,12 +383,14 @@
 		};
 		96DEE0C6271CEFCD003C3985 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33AFFF9343330E281FE65617 /* Pods-HakodateBusApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 56A6V2NMA2;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HakodateBusApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
