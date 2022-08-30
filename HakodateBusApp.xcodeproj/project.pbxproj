@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		67D344C03143290C3195B9A3 /* Pods_HakodateBusApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C84B1ABC1AD90E810ADC6B9 /* Pods_HakodateBusApp.framework */; };
+		967FA1D128BDE2F8008D057B /* Mintfile in Resources */ = {isa = PBXBuildFile; fileRef = 967FA1D028BDE2F8008D057B /* Mintfile */; };
+		967FA1D328BDE34A008D057B /* viewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967FA1D228BDE34A008D057B /* viewController.swift */; };
 		96DEE0B4271CEFC8003C3985 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEE0B3271CEFC8003C3985 /* AppDelegate.swift */; };
 		96DEE0B6271CEFC8003C3985 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEE0B5271CEFC8003C3985 /* SceneDelegate.swift */; };
-		96DEE0B8271CEFC8003C3985 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEE0B7271CEFC8003C3985 /* ViewController.swift */; };
 		96DEE0BB271CEFC8003C3985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96DEE0B9271CEFC8003C3985 /* Main.storyboard */; };
 		96DEE0BD271CEFCC003C3985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96DEE0BC271CEFCC003C3985 /* Assets.xcassets */; };
 		96DEE0C0271CEFCC003C3985 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96DEE0BE271CEFCC003C3985 /* LaunchScreen.storyboard */; };
@@ -19,10 +20,11 @@
 /* Begin PBXFileReference section */
 		0C84B1ABC1AD90E810ADC6B9 /* Pods_HakodateBusApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HakodateBusApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33AFFF9343330E281FE65617 /* Pods-HakodateBusApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HakodateBusApp.release.xcconfig"; path = "Target Support Files/Pods-HakodateBusApp/Pods-HakodateBusApp.release.xcconfig"; sourceTree = "<group>"; };
+		967FA1D028BDE2F8008D057B /* Mintfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Mintfile; sourceTree = "<group>"; };
+		967FA1D228BDE34A008D057B /* viewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewController.swift; sourceTree = "<group>"; };
 		96DEE0B0271CEFC8003C3985 /* HakodateBusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HakodateBusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96DEE0B3271CEFC8003C3985 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96DEE0B5271CEFC8003C3985 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		96DEE0B7271CEFC8003C3985 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96DEE0BA271CEFC8003C3985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96DEE0BC271CEFCC003C3985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96DEE0BF271CEFCC003C3985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		96DEE0A7271CEFC8003C3985 = {
 			isa = PBXGroup;
 			children = (
+				967FA1D028BDE2F8008D057B /* Mintfile */,
 				96DEE0B2271CEFC8003C3985 /* HakodateBusApp */,
 				96DEE0B1271CEFC8003C3985 /* Products */,
 				1A9D3EA5330F2F3991B02E31 /* Pods */,
@@ -82,7 +85,7 @@
 			children = (
 				96DEE0B3271CEFC8003C3985 /* AppDelegate.swift */,
 				96DEE0B5271CEFC8003C3985 /* SceneDelegate.swift */,
-				96DEE0B7271CEFC8003C3985 /* ViewController.swift */,
+				967FA1D228BDE34A008D057B /* viewController.swift */,
 				96DEE0B9271CEFC8003C3985 /* Main.storyboard */,
 				96DEE0BC271CEFCC003C3985 /* Assets.xcassets */,
 				96DEE0BE271CEFCC003C3985 /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967FA1D128BDE2F8008D057B /* Mintfile in Resources */,
 				96DEE0C0271CEFCC003C3985 /* LaunchScreen.storyboard in Resources */,
 				96DEE0BD271CEFCC003C3985 /* Assets.xcassets in Resources */,
 				96DEE0BB271CEFC8003C3985 /* Main.storyboard in Resources */,
@@ -207,7 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96DEE0B8271CEFC8003C3985 /* ViewController.swift in Sources */,
+				967FA1D328BDE34A008D057B /* viewController.swift in Sources */,
 				96DEE0B4271CEFC8003C3985 /* AppDelegate.swift in Sources */,
 				96DEE0B6271CEFC8003C3985 /* SceneDelegate.swift in Sources */,
 			);
